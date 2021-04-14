@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 let data = {
-  message: 'about'
+  message: '/birds/find/abc'
 };
 
 router.use(function timeLog(req, res, next) {
