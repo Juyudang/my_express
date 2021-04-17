@@ -26,3 +26,5 @@ router.route('/users/:usr_id')
   .delete(function(req, res, next) {
     next(new Error('not implemented'))
   })
+
+  module.exports = router;

@@ -10,7 +10,7 @@ router.use(function timeLog(req, res, next) {
   next();
 });
 
-router.get('/', function(rea, res) {
+router.get('/', function(req, res) {
   res.send('Birds home page');
 });
 

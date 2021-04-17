@@ -6,7 +6,9 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var birds = require('./routes/birds');
-// var login = require('./routes/login');
+var test = require('./routes/test');
+var timestamp = require('./routes/timestamp');
+var login = require('./routes/login');
 var app = express();
 
 app.use(logger('dev'));
@@ -18,6 +20,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/birds', birds);
-// app.use('/login', login);
+app.use('/test', test);
+app.use('/timestamp', timestamp);
+app.use('/login', login);
 
 module.exports = app;
